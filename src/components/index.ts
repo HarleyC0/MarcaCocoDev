@@ -2,3 +2,6 @@ export { Footer } from './Footer';
 export { Navbar } from './Navbar';
 export { Home } from './Home';
 export { Blog } from './Blog';
+export { Languages } from './Languages';
+export { Portfolio } from  './Portfolio';
+export { Contact } from './Contact'

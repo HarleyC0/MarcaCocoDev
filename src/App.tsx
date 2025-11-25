@@ -1,5 +1,5 @@
 import './App.css'
-import { Footer, Navbar, Home, Blog } from './components'
+import { Footer, Navbar, Home, Blog, Languages, Portfolio, Contact } from './components'
 
 function App() {
 
@@ -9,6 +9,9 @@ function App() {
       <Navbar />
       <Home />
       <Blog/>
+      <Languages/>
+      <Portfolio/>
+      <Contact/>
       <Footer />
     </>
   )

@@ -3,7 +3,42 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: black;
+  background-color: #EE6C4D;
+}
+
+/* Component wrappers with alternating background colors */
+.component-wrapper {
+  padding: 2rem;
+  margin: 0;
+  border-radius: 0;
+}
+
+.footer-wrapper {
+  background-color: #FFFFFF;
+}
+
+.navbar-wrapper {
+  background-color: #F0F0F0;
+}
+
+.home-wrapper {
+  background-color: #F0F0F0;
+}
+
+.blog-wrapper {
+  background-color: #F0F0F0;
+}
+
+.languages-wrapper {
+  background-color: #FFFFFF;
+}
+
+.portfolio-wrapper {
+  background-color: #F0F0F0;
+}
+
+.contact-wrapper {
+  background-color: #FFFFFF;
 }
 
 

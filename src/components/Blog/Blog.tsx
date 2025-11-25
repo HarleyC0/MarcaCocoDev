@@ -3,7 +3,7 @@ import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuL
 
 function Blog() {
     return(
-        <div>
+        <div className="component-wrapper blog-wrapper">
             <div>
                 <p>My lasted videos</p>
                 <p>comparto mi proceso en redes</p>
