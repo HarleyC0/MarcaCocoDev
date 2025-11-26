@@ -1,5 +1,7 @@
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuLink, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import { Button } from "@/components/ui/button"
 import "./Navbar.css";
+import { MessageCircleCode } from 'lucide-react';
 
 function Navbar() { 
     
@@ -7,7 +9,7 @@ function Navbar() {
     <div className="component-wrapper navbar-wrapper">
         <div className="navbar-container">
             <img 
-                src="./src/assets/Logo_Completo_Negro.png" 
+                src="./src/assets/logonewColorsSvgBlack.png" 
                 alt="Logo" 
                 className="navbar-logo"
             />
@@ -41,6 +43,10 @@ function Navbar() {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
+            <div className="numNavbar">
+                <p>+57 3229712878</p>
+                <Button variant="outline" size="icon"><MessageCircleCode/></Button>
+            </div>
         </div>
     </div>
     )

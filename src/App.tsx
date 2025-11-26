@@ -5,7 +5,6 @@ function App() {
 
   return (
     <>
-      <Footer />
       <Navbar />
       <Home />
       <Blog/>
