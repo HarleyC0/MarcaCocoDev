@@ -1,9 +1,13 @@
+.navbar-wrapper {
+    padding-top: 0;
+}
+
 .navbar-container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     gap: 2rem;
 }
 
@@ -28,4 +32,35 @@
 
 .numNavbar p {
     margin: 0;
+}
+
+/* Estilos para los items del navigation menu - mismo color de fondo que el navbar */
+.navbar-items [data-slot="navigation-menu-trigger"],
+.navbar-items [data-slot="navigation-menu-link"] {
+    background-color: #F2F3E7 !important;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 25px;
+    transition: border-color 0.3s ease;
+}
+
+.navbar-items [data-slot="navigation-menu-trigger"]:hover,
+.navbar-items [data-slot="navigation-menu-link"]:hover {
+    background-color: #F2F3E7 !important;
+    border-left: 3px solid currentColor;
+    border-right: 3px solid currentColor;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 25px;
+}
+
+.navbar-items [data-slot="navigation-menu-trigger"]:focus,
+.navbar-items [data-slot="navigation-menu-link"]:focus {
+    background-color: #F2F3E7 !important;
+}
+
+.navbar-items [data-slot="navigation-menu-trigger"][data-state="open"] {
+    background-color: #F2F3E7 !important;
 }

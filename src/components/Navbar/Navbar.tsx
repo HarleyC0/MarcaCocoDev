@@ -22,24 +22,21 @@ function Navbar() {
                             target="_blank" 
                             rel="noopener noreferrer"
                             >
-                            Home
+                            HOME
                             </a>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>BLOG</NavigationMenuLink> 
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>SERVICES</NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>PROJECTS</NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Contact</NavigationMenuTrigger>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>CONTACT</NavigationMenuLink>
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>

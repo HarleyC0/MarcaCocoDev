@@ -1,23 +1,27 @@
 import "./Home.css"
+import homeBackImage from "@/assets/homeBackGhibli.png"
+import { Button } from "@/components/ui/button";
+import { CodeXml } from 'lucide-react';
 
 function Home() {
     return(
-        <div className="component-wrapper home-wrapper">
+        <div 
+            className="component-wrapper home-wrapper"
+            style={{ backgroundImage: `url(${homeBackImage})` }}
+        >
             <div className="home-container">
                 <div className="container-home">
-                    <p className="orange-background p-white burbuja-orange">Hello, I'am </p>
-                    <p className="primary-white p-white">Harley Contreras</p>
-                    <p className="p-white">FullStack Developer with JS emviroment</p>
-                    <div className="cv-work-div">
-                        <p className="orange-background p-white">Download CV</p>
-                        <p className="p-white">My Work</p>
+                    <p className="homeName">Hey there <br/>, I'am HarleyCo</p>
+                    <p className="homeEmail">harleyco37@gmail.com</p>
+                    <Button variant="outline" className="homeCv">Download CV</Button>
+                </div>
+                <div className="containter-home-rigth">
+                    <p className="homePhrase">En los problemas <br />veo soluciones en código, <br /> y me encanta lo que hago</p>
+                    <div className="homeDescription">
+                        <Button variant="outline" size="icon" className="homeCodeXmlButton"><CodeXml/></Button>
+                        <p >FullStack Developer <br />with JS emviroment</p>
                     </div>
                 </div>
-                <img 
-                    src="./src/assets/gemini-imagen-portada.png" 
-                    alt="Logo" 
-                    className="navbar-logo"
-                />
             </div>
         </div>
     );
