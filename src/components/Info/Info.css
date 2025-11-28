@@ -1,0 +1,208 @@
+.component-wrapper.Info-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  padding: 4rem 3rem;
+  background-color: white;
+  position: relative;
+  min-height: 40vh;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Orange vertical line on the right edge */
+.Info-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #EE6C4D;
+}
+
+/* Left column - Services list */
+.left-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 40%;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.left-info > div {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.left-info > div:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon styling - orange circular background */
+.left-info > div svg {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
+  background-color: #EE6C4D;
+  border-radius: 50%;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Text container in service cards */
+.left-info > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.left-info > div > div p:first-child {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #095550;
+  margin: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.left-info > div > div p:last-child {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Right column - Description and statistics */
+.right-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 60%;
+  padding-right: 2rem;
+}
+
+.right-info > p:first-child {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #095550;
+  margin: 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.right-info > p:nth-child(2) {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 90%;
+  text-align: justify;
+}
+
+/* Statistics section */
+.right-info .stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.right-info .stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.right-info .stats > div span:first-child {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #095550;
+  line-height: 1;
+}
+
+.right-info .stats > div span:last-child {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Button styling */
+.right-info button {
+  margin-top: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: #095550;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.right-info button:hover {
+  background-color: #0a6b65;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .Info-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    align-items: center;
+  }
+
+  .left-info,
+  .right-info {
+    width: 100%;
+  }
+
+  .left-info {
+    justify-content: flex-start;
+  }
+
+  .right-info {
+    padding-right: 0;
+  }
+
+  .right-info > p:first-child {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Info-wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .left-info > div {
+    padding: 1.25rem;
+  }
+
+  .left-info > div svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.625rem;
+  }
+
+  .right-info > p:first-child {
+    font-size: 1.75rem;
+  }
+
+  .right-info .stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

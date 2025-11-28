@@ -1,0 +1,196 @@
+.blog-wrapper {
+  padding: 4rem 3rem;
+  background-color: #F0F0F0;
+  min-height: 40vh;
+}
+
+/* Top section with title and filter */
+.sup-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.sup-blog > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.sup-blog > div:first-child p:first-child {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: #095550;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sup-blog > div:first-child p:last-child {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Navigation Menu Filter - Orange color */
+.Filter-blog {
+  display: flex;
+  align-items: center;
+}
+
+.Filter-blog ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos para los items del navigation menu - borde naranja en hover */
+.Filter-blog [data-slot="navigation-menu-trigger"],
+.Filter-blog [data-slot="navigation-menu-link"] {
+  color: #EE6C4D !important;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background: transparent !important;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 25px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.Filter-blog [data-slot="navigation-menu-trigger"]:hover,
+.Filter-blog [data-slot="navigation-menu-link"]:hover {
+  color: #EE6C4D !important;
+  background: transparent !important;
+  border-left: 3px solid #EE6C4D;
+  border-right: 3px solid #EE6C4D;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 25px;
+}
+
+.Filter-blog [data-slot="navigation-menu-trigger"]:focus,
+.Filter-blog [data-slot="navigation-menu-link"]:focus {
+  background: transparent !important;
+}
+
+.Filter-blog [data-slot="navigation-menu-trigger"][data-state="open"] {
+  background: transparent !important;
+}
+
+/* Body section with project cards */
+.body-blog {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.blog-card {
+  flex: 1;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Card 1 - App Design (Orange background) */
+.blog-card-orange {
+  background-color: #EE6C4D;
+  color: white;
+}
+
+/* Card 2 & 3 - Web Design & Brand (Dark teal background) */
+.blog-card-teal {
+  background-color: #095550;
+  color: white;
+}
+
+/* Card titles */
+.blog-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* Card subtitles */
+.blog-card-subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin: 0 0 2rem 0;
+  text-align: left;
+}
+
+/* Card content area for mockups/images */
+.blog-card-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .body-blog {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .body-blog > div {
+    min-height: 350px;
+  }
+
+  .sup-blog {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Filter-blog {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .sup-blog {
+    margin-bottom: 2rem;
+  }
+
+  .sup-blog > div:first-child p:first-child {
+    font-size: 2rem;
+  }
+
+  .body-blog > div {
+    min-height: 300px;
+    padding: 2rem;
+  }
+
+  .body-blog > div::before {
+    font-size: 2rem;
+  }
+}
+

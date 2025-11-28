@@ -2,7 +2,7 @@
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 50%;
 }
 
 .home-container {
@@ -27,7 +27,7 @@
     padding-left: 50px;
     position: absolute;
     top: 0;
-    padding: 50px;
+    padding: 0px 50px;
     font-size: clamp(1rem, 4vw, 3em);
     font-weight: bold;
 }

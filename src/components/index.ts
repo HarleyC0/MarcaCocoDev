@@ -4,4 +4,5 @@ export { Home } from './Home';
 export { Blog } from './Blog';
 export { Languages } from './Languages';
 export { Portfolio } from  './Portfolio';
-export { Contact } from './Contact'
+export { Contact } from './Contact';
+export { Info } from './Info';;
