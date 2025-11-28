@@ -1,52 +1,42 @@
-import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button"
 import "./Navbar.css";
-import { MessageCircleCode } from 'lucide-react';
-import logoImage from "@/assets/logonewColorsSvgBlack.png";
+import logoImage from "@/assets/LogoSolo.png";
+import { Moon } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 
 function Navbar() { 
     
     return (
-    <div className="component-wrapper navbar-wrapper">
-        <div className="navbar-container">
-            <img 
-                src={logoImage} 
-                alt="Logo" 
-                className="navbar-logo"
-            />
-            <NavigationMenu className="navbar-items">
-                <NavigationMenuList>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                            <a 
-                            href="https://coco--dev.vercel.app/" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            >
-                            HOME
-                            </a>
-                        </NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>BLOG</NavigationMenuLink> 
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>SERVICES</NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>PROJECTS</NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>CONTACT</NavigationMenuLink>
-                    </NavigationMenuItem>
-                </NavigationMenuList>
-            </NavigationMenu>
-            <div className="numNavbar">
-                <p>+57 3229712878</p>
-                <Button variant="outline" size="icon"><MessageCircleCode/></Button>
+        <nav className="navbar">
+            <div className="navbar-content">
+                <div className="navbar-left">
+                    <div className="navbar-brand">
+                        <img 
+                            src={logoImage} 
+                            alt="Logo" 
+                            className="navbar-logo-icon"
+                        />
+                        <span className="navbar-brand-text">Coco'Dev</span>
+                    </div>
+                    <div className="navbar-links">
+                        <a href="#home" className="navbar-link">Home</a>
+                        <a href="#projects" className="navbar-link">Projects</a>
+                        <a href="#contact" className="navbar-link">Contact</a>
+                    </div>
+                </div>
+                <div className="modeNavbar">
+                    <DropdownMenu>
+                        <DropdownMenuTrigger>
+                            <Button variant="outline"><Moon/></Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-40" align="end">
+                            <DropdownMenuItem>Dark</DropdownMenuItem>
+                            <DropdownMenuItem>Light</DropdownMenuItem>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+                </div>
             </div>
-        </div>
-    </div>
+        </nav>
     )
 
 }

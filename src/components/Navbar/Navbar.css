@@ -1,67 +1,76 @@
-.navbar-wrapper {
-    padding-top: 0;
+.navbar {
+    background-color: #000000;
+    width: 100%;
+    border-bottom: 1px solid #2a2a2a;
 }
 
-.navbar-container {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+.navbar-content {
+    display: flex;
     align-items: center;
-    width: 100%;
-    padding: 0rem 2rem;
+    justify-content: space-between;
+    padding: 1rem clamp(1rem, 10vw, 13rem);
+    max-width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
-.navbar-logo {
-    height: 120px; /* 80% de 150px */
-    width: auto;
-    object-fit: contain;
-    justify-self: start;
-    align-self: center;
-}
-
-.navbar-items {
-    justify-self: center;
-}
-
-.numNavbar {
+.navbar-brand {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    justify-self: end;
+    gap: 0.75rem;
 }
 
-.numNavbar p {
-    margin: 0;
+.navbar-logo-icon {
+    height: 32px;
+    width: 32px;
 }
 
-/* Estilos para los items del navigation menu - mismo color de fondo que el navbar */
-.navbar-items [data-slot="navigation-menu-trigger"],
-.navbar-items [data-slot="navigation-menu-link"] {
-    background-color: #F2F3E7 !important;
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
-    border-top: none;
-    border-bottom: none;
-    border-radius: 25px;
-    transition: border-color 0.3s ease;
+.navbar-brand-text {
+    color: #EE6C4D;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
-.navbar-items [data-slot="navigation-menu-trigger"]:hover,
-.navbar-items [data-slot="navigation-menu-link"]:hover {
-    background-color: #F2F3E7 !important;
-    color: #095550 !important;
-    border-left: 3px solid #095550;
-    border-right: 3px solid #095550;
-    border-top: none;
-    border-bottom: none;
-    border-radius: 25px;
+.navbar-links {
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    gap: 5rem;
 }
 
-.navbar-items [data-slot="navigation-menu-trigger"]:focus,
-.navbar-items [data-slot="navigation-menu-link"]:focus {
-    background-color: #F2F3E7 !important;
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
 }
 
-.navbar-items [data-slot="navigation-menu-trigger"][data-state="open"] {
-    background-color: #F2F3E7 !important;
+.navbar-link:hover {
+    background-color: #252525;
+    color: white;
+}
+
+.modeNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modeNavbar button {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.modeNavbar button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.3);
 }
