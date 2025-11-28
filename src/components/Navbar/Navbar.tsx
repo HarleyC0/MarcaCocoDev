@@ -2,6 +2,7 @@ import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuL
 import { Button } from "@/components/ui/button"
 import "./Navbar.css";
 import { MessageCircleCode } from 'lucide-react';
+import logoImage from "@/assets/logonewColorsSvgBlack.png";
 
 function Navbar() { 
     
@@ -9,7 +10,7 @@ function Navbar() {
     <div className="component-wrapper navbar-wrapper">
         <div className="navbar-container">
             <img 
-                src="./src/assets/logonewColorsSvgBlack.png" 
+                src={logoImage} 
                 alt="Logo" 
                 className="navbar-logo"
             />
