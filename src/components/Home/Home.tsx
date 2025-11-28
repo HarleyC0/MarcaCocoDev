@@ -1,7 +1,7 @@
 import "./Home.css";
 import LogoPerfil from '@/assets/GhibliPerfil.png';
 import { Button } from "@/components/ui/button";
-import { AtSign, GalleryHorizontalEnd, Github, Globe, Linkedin, X } from 'lucide-react';
+import { AtSign, GalleryHorizontalEnd, Github, Globe, Linkedin } from 'lucide-react';
 
 function Home() {
     return(
