@@ -33,12 +33,6 @@
     transform: translateZ(0);
 }
 
-.home-container {
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
 
 /*
 .home-content::before {

@@ -8,7 +8,7 @@ function Home() {
         <div className="home-container text-start">
             <div className="home-content flex justify-center items-center p-6 min-h-[calc(110vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
                 <div className="home-main grid grid-cols-1">
-                    <div className="home-header">
+                    <div className="flex flex-col md:flex-row md:items-center gap-10 pb-8">
                         <img src={LogoPerfil} alt="FotoPerfil" className="home-avatar"/>
                         <div className="home-titles">
                             <h1 className="home-title text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
