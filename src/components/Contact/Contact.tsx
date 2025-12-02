@@ -9,7 +9,7 @@ function Contact() {
                     <div className='contact-tittle'>
                         <h2>Bringing your ideas to life. <br />
                         Let's turn your vision into reality</h2>
-                        <p>Have a project in mind or just want to chat? Let's connect!</p>
+                        <p className='text-black'>Have a project in mind or just want to chat? Let's connect!</p>
                     </div>
                     <div className='contact-email'>
                         <form action="" className='contact-form'>
@@ -22,15 +22,15 @@ function Contact() {
                             <label>Message</label>
                             <textarea id="" placeholder='Your msg here...' rows={5}></textarea>
 
-                            <button type='submit' className='send-btn'>Send</button>
+                            <button type='submit' className='send-btn bg-white/10 dark:bg-black text-white dark:text-white'>Send</button>
                         </form>
                     </div>
                 </div>
                 <div className='contact-redes'>
-                    <a href=""><Linkedin/>LinkedIn</a>
-                    <a href=""><Github/>Github</a>
-                    <a href=""><MessageCircleMore/>WhatsApp</a>
-                    <a href=""><Youtube/>Tiktok</a>
+                    <a href="" className='text-black dark:text-white'><Linkedin/>LinkedIn</a>
+                    <a href="" className='text-black dark:text-white'><Github/>Github</a>
+                    <a href="" className='text-black dark:text-white'><MessageCircleMore/>WhatsApp</a>
+                    <a href="" className='text-black dark:text-white'><Youtube/>Tiktok</a>
                 </div>
             </div>
         </section>

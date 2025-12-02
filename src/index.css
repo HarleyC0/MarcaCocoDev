@@ -75,7 +75,11 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   /* Gradiente claro*/
-  --hero-gradient: linear-gradient(135deg, oklch(1 0 0) 0%, oklch(0.97 0.05 340) 100%); 
+  --hero-gradient: linear-gradient(
+    135deg, 
+    oklch(0.97 0 0) 0%, 
+    oklch(0.97 0.05 340) 100%
+    ); 
   /* Colores base para el degradado */
   --burbuja-color-1: 0, 255, 255;  /* Cian (R, G, B) */
   --burbuja-color-2: 255, 69, 0;   /* Naranja (R, G, B) */
