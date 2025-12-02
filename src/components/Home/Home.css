@@ -1,3 +1,84 @@
+.home-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid #EE6C4D;
+    box-shadow: 0 0 30px #EE6C4D;
+}
+
+.gradient-text {
+    background: linear-gradient(0deg, #EE6C4D 0%, #ec795c 50%, #eb8e77 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.mesh-gradient-center {
+    position: relative;
+}
+
+.mesh-gradient-center:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 35%;
+    width: 700px;
+    height: 60%;
+    z-index: -1;
+    background-image: var(--mesh-gradient);
+    filter: blur(100px);
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/*
+.home-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0; 
+}
+
+.home-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    background-color: #000000; 
+    
+    background-image: 
+        
+        radial-gradient(circle at 60% 40%, 
+            rgba(var(--burbuja-color-1), var(--burbuja-opacidad)), 
+            transparent 50%
+        ),
+        radial-gradient(circle at 30% 60%, 
+            rgba(var(--burbuja-color-2), var(--burbuja-opacidad)), 
+            transparent 50%
+        ),
+        radial-gradient(circle at 50% 60%, 
+            rgba(var(--burbuja-color-3), var(--burbuja-opacidad)), 
+            transparent 70%
+        ); 
+        
+    background-repeat: no-repeat;
+}
+
+
+/*
 .home-container {
     min-height: 100vh;
     display: flex;
@@ -9,6 +90,8 @@
 
 /* Grid pattern background */
 
+
+/*
 .home-container::before {
     content: '';
     position: absolute;
@@ -113,12 +196,6 @@
     text-align: left;
 }
 
-.gradient-text {
-    background: linear-gradient(0deg, #EE6C4D 0%, #ec795c 50%, #eb8e77 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 
 .home-bio {
     font-size: 1.1rem;
@@ -206,7 +283,11 @@
     height: 100%;
 }
 
+
+
 /* Responsive design */
+
+/*
 @media (max-width: 768px) {
     .home-header {
         flex-direction: column;
@@ -237,3 +318,4 @@
         margin-right: auto;
     }
 }
+

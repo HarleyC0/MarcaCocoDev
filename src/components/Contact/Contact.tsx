@@ -9,7 +9,7 @@ function Contact() {
                     <div className='contact-tittle'>
                         <h2>Bringing your ideas to life. <br />
                         Let's turn your vision into reality</h2>
-                        <p className='text-black'>Have a project in mind or just want to chat? Let's connect!</p>
+                        <p className='text-black dark:text-white'>Have a project in mind or just want to chat? Let's connect!</p>
                     </div>
                     <div className='contact-email'>
                         <form action="" className='contact-form'>

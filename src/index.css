@@ -80,13 +80,12 @@
     oklch(0.97 0 0) 0%, 
     oklch(0.97 0.05 340) 100%
     ); 
-  /* Colores base para el degradado */
-  --burbuja-color-1: 0, 255, 255;  /* Cian (R, G, B) */
-  --burbuja-color-2: 255, 69, 0;   /* Naranja (R, G, B) */
-  --burbuja-color-3: 138, 43, 226; /* Púrpura (R, G, B) */
-  
-  /* Nivel de opacidad (alpha) para la mezcla */
-  --burbuja-opacidad: 0.15; /* o 0.2, etc. */
+  /**/
+  --mesh-red: 331 100% 50%;
+  --mesh-purple: 0 100% 59%;
+  --mesh-blue: 198 100% 50%;
+  --mesh-orange: 34 100% 65%;
+  --mesh-gradient: radial-gradient(at 38% 100%, hsla(var(--mesh-red)) 0px, transparent 40%), radial-gradient(at 97% 50%, hsla(var(--mesh-purple)) 0px, transparent 50%), radial-gradient(at 80% 130%, hsla(var(--mesh-blue)) 0px, transparent 50%), radial-gradient(at 20% 160%, hsla(var(--mesh-orange)) 0px, transparent 50%);
 }
 
 .dark {
@@ -122,6 +121,8 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   --hero-gradient: linear-gradient(135deg, oklch(0.1 0 280) 0%, oklch(0.2 0.05 280) 100%);/* Gradiente oscuro */
+  /**/
+  --mesh-gradient: radial-gradient(at 38% 100%, hsla(var(--mesh-red)) 0px, transparent 40%), radial-gradient(at 97% 50%, hsla(var(--mesh-purple)) 0px, transparent 50%), radial-gradient(at 80% 130%, hsla(var(--mesh-blue)) 0px, transparent 50%), radial-gradient(at 20% 160%, hsla(var(--mesh-orange)) 0px, transparent 50%);
 }
 
 @layer base {
