@@ -5,7 +5,7 @@ import { AtSign, GalleryHorizontalEnd, Github, Globe, Linkedin } from 'lucide-re
 
 function Home() {
     return(
-        <div className="home-container bg-square-pattern bg-repeat bg-50 text-start">
+        <div className="home-container text-start">
             <div className="home-content flex justify-center items-center p-6 min-h-[calc(110vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
                 <div className="home-main grid grid-cols-1">
                     <div className="home-header">
