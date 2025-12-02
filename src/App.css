@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: black;
 }
 
 /* Component wrappers with alternating background colors */
@@ -13,36 +12,6 @@
   border-radius: 0;
 }
 
-.footer-wrapper {
-  background-color: #F2F3E7;
-}
 
-.navbar-wrapper {
-  background-color: #F2F3E7;
-}
-
-.home-wrapper {
-  background-color: #F2F3E7;
-}
-
-.Info-wrapper {
-  background-color: white;
-}
-
-.blog-wrapper {
-  background-color: #F0F0F0;
-}
-
-.languages-wrapper {
-  background-color: #FFFFFF;
-}
-
-.portfolio-wrapper {
-  background-color: #F0F0F0;
-}
-
-.contact-wrapper {
-  background-color: #FFFFFF;
-}
 
 

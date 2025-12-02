@@ -1,13 +1,14 @@
 .home-container {
     min-height: 100vh;
-    background-color: #0a0a0a !important;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 /* Grid pattern background */
+
 .home-container::before {
     content: '';
     position: absolute;
@@ -20,29 +21,40 @@
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
+    z-index: 0; 
 }
 
-/* Horizontal gradient overlay in lower half */
 .home-container::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    height: 50%;
-    background: linear-gradient(
-        to right,
-        rgba(63, 214, 194, 0.3) 0%,
-        rgba(87, 197, 161, 0.3) 50%,
-        rgba(207, 146, 32, 0.3) 100%
-    );
-    pointer-events: none;
-    z-index: 0;
+    bottom: 0;
+    z-index: -1; 
+    background-color: #000000; 
+    
+    background-image: 
+        
+        radial-gradient(circle at 60% 40%, 
+            rgba(var(--burbuja-color-1), var(--burbuja-opacidad)), 
+            transparent 50%
+        ),
+        radial-gradient(circle at 30% 60%, 
+            rgba(var(--burbuja-color-2), var(--burbuja-opacidad)), 
+            transparent 50%
+        ),
+        radial-gradient(circle at 50% 60%, 
+            rgba(var(--burbuja-color-3), var(--burbuja-opacidad)), 
+            transparent 70%
+        ); 
+        
+    background-repeat: no-repeat;
 }
+
 
 .home-content {
     position: relative;
-    z-index: 1;
 }
 
 .home-main {

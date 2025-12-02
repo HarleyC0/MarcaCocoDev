@@ -74,6 +74,15 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Gradiente claro*/
+  --hero-gradient: linear-gradient(135deg, oklch(1 0 0) 0%, oklch(0.97 0.05 340) 100%); 
+  /* Colores base para el degradado */
+  --burbuja-color-1: 0, 255, 255;  /* Cian (R, G, B) */
+  --burbuja-color-2: 255, 69, 0;   /* Naranja (R, G, B) */
+  --burbuja-color-3: 138, 43, 226; /* Púrpura (R, G, B) */
+  
+  /* Nivel de opacidad (alpha) para la mezcla */
+  --burbuja-opacidad: 0.15; /* o 0.2, etc. */
 }
 
 .dark {
@@ -108,6 +117,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --hero-gradient: linear-gradient(135deg, oklch(0.1 0 280) 0%, oklch(0.2 0.05 280) 100%);/* Gradiente oscuro */
 }
 
 @layer base {
@@ -118,8 +128,4 @@
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
   }
-}
-
-html body {
-  background-color: #EE6C4D;
 }
