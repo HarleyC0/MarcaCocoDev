@@ -3,7 +3,7 @@ import { Linkedin, Github, MessageCircleMore, Youtube } from 'lucide-react';
 
 function Contact() {
     return(
-        <section className="contact-wrapper">
+        <section className="contact-wrapper" id='Contact'>
             <div className='contact-container' style={{background: "var(--hero-gradient)"}}>
                 <div className='contact-top'>
                     <div className='contact-tittle'>

@@ -4,8 +4,31 @@ import { Moon, Sun } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/hooks/useTheme";
+import { useLocation } from "react-router-dom";
 
 function Navbar() { 
+
+    // current location
+    const location = useLocation().pathname;
+    // funcion para scroll a seccion basada en ID
+    const scrollToSection = (sectionId: string) => {
+
+        // Si la ruta actual no es "/" 
+        if (location !== "/") {
+            window.sessionStorage.setItem('scrollTo', sectionId)
+            window.location.href = "/"
+            return;
+        }
+        // si la ruta actual es "/"
+        const element = document.getElementById(sectionId)
+        if (element) {
+            window.scrollTo({
+                top: element.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+
     
     // Usa el hook para obtener la función de cambio
     const { theme, setThemeMode } = useTheme();
@@ -23,9 +46,9 @@ function Navbar() {
                         <span className="navbar-brand-text">Coco'Dev</span>
                     </div>
                     <div className="navbar-links">
-                        <a href="#home" className="navbar-link bg-white dark:bg-black text-black dark:text-white hover:bg-accent dark:hover:bg-accent">Home</a>
-                        <a href="#projects" className="navbar-link bg-white dark:bg-black text-black dark:text-white hover:bg-accent dark:hover:bg-accent">Projects</a>
-                        <a href="#contact" className="navbar-link bg-white dark:bg-black text-black dark:text-white hover:bg-accent dark:hover:bg-accent">Contact</a>
+                        <a href="/" className="navbar-link bg-white dark:bg-black text-black dark:text-white hover:bg-accent dark:hover:bg-accent">Home</a>
+                        <a href="/projects" className="navbar-link bg-white dark:bg-black text-black dark:text-white hover:bg-accent dark:hover:bg-accent">Projects</a>
+                        <Button onClick={() => scrollToSection('Contact')} className="navbar-link bg-white dark:bg-black text-black dark:text-white hover:bg-accent dark:hover:bg-accent">Contact</Button>
                     </div>
                 </div>
                 <div className="modeNavbar">
