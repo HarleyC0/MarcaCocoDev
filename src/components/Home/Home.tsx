@@ -5,7 +5,22 @@ import { AtSign, GalleryHorizontalEnd, Github, Globe, Linkedin } from 'lucide-re
 
 function Home() {
     return(
-        <div className="text-start">
+        <div className="text-start relative">
+            <div 
+                style={{
+                    content: '""',
+                    position: 'absolute',
+                    top: '20%',
+                    right: '35%',
+                    width: '700px',
+                    height: '60%',
+                    zIndex: -1,
+                    backgroundImage: 'var(--mesh-gradient)',
+                    filter: 'blur(100px)',
+                    willChange: 'transform',
+                    transform: 'translateZ(0)',
+                }}
+            />
             <div className="flex justify-center items-center p-6 min-h-[calc(110vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
                 <div className="grid grid-cols-1">
                     <div className="flex flex-col md:flex-row md:items-center gap-10 pb-8">
