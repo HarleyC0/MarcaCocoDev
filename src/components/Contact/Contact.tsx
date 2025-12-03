@@ -7,9 +7,9 @@ function Contact() {
             <div className='contact-container' style={{background: "var(--hero-gradient)"}}>
                 <div className='contact-top'>
                     <div className='contact-tittle'>
-                        <h2>Bringing your ideas to life. <br />
-                        Let's turn your vision into reality</h2>
-                        <p className='text-black dark:text-white'>Have a project in mind or just want to chat? Let's connect!</p>
+                        <h2>I enjoy the process of turning ideas into tech projects <br />
+                        that solve real problems and generate impact.</h2>
+                        <p className='text-black dark:text-white'>Have a project in mind or looking for someone to join your team? Let's talk.</p>
                     </div>
                     <div className='contact-email'>
                         <form action="" className='contact-form'>
