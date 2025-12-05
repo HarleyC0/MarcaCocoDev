@@ -34,7 +34,7 @@ function Navbar() {
     const { theme, setThemeMode } = useTheme();
 
     return (
-        <nav className="navbar bg-white dark:bg-black">
+        <nav className="navbar bg-white dark:bg-black backdrop-blur-2xl bg-white/80 dark:bg-inherit dark:bg-transparent-gradient">
             <div className="navbar-content">
                 <div className="navbar-left">
                     <div className="navbar-brand">

@@ -7,3 +7,4 @@ export { Portfolio } from './Portfolio';
 export { Contact } from './Contact';
 export { Info } from './Info';
 export { Services } from './Services';
+export { Projects } from './Projects'

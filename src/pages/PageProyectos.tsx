@@ -1,8 +1,11 @@
-import { Navbar } from "@/components";
+import { Navbar, Projects } from "@/components";
 
 function PageProyectos() {
     return (
+        <>
         <Navbar/>
+        <Projects/>
+        </>
     )
 }
 
