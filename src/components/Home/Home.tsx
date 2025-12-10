@@ -1,6 +1,6 @@
 import LogoPerfil from '@/assets/GhibliPerfil.png';
 import { Button } from "@/components/ui/button";
-import { AtSign, GalleryHorizontalEnd, Github, Globe, Linkedin } from 'lucide-react';
+import { AtSign, GalleryHorizontalEnd, Github, FilePlay, Linkedin } from 'lucide-react';
 
 function Home() {
 
@@ -47,21 +47,21 @@ function Home() {
                     <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row lg:items-center justify-between max-w-[600px] mt-8">
                             <div className="flex gap-2 lg:gap-4">
                                 <Button variant="outline">
-                                    <AtSign className="lucide lucide-at-sign mr-2 h-5 w-5"/>Contact Me
+                                    <a href="https://wa.me/573229712878?text=Hola%20CocoDev" className='flex items-center' target="_blank" rel="noopener noreferrer"><AtSign className="lucide lucide-at-sign mr-2 h-5 w-5"/>Contact Me</a>
                                 </Button>
                                 <Button  variant="outline">
-                                    <GalleryHorizontalEnd className="lucide lucide-gallery-horizontal-end mr-2 h-5 w-5"/>View Projects
+                                    <a href='/projects' className='flex items-center'><GalleryHorizontalEnd className="lucide lucide-gallery-horizontal-end mr-2 h-5 w-5"/>View Projects</a>
                                 </Button>
                             </div>
                             <div data-orientation="vertical" className="divider shrink-0 w-[1px] bg-foreground h-4 hidden lg:block" role="none"></div>
                             <div className="flex items-center pb-10 sm:pb-0 px-5 gap-14 md:gap-8 text-xl">
-                                <a href="#" aria-label="GitHub" className="social-icon">
+                                <a href="https://github.com/HarleyC0" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="social-icon">
                                     <Github />
                                 </a>
-                                <a href="#" aria-label="Website" className="social-icon">
-                                    <Globe />
+                                <a href="https://www.tiktok.com/@cocodev.h" aria-label="Website" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                    <FilePlay />
                                 </a>
-                                <a href="#" aria-label="LinkedIn" className="social-icon">
+                                <a href="https://www.linkedin.com/in/harley-contreras/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-icon">
                                     <Linkedin />
                                 </a>
                             </div>

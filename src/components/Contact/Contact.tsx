@@ -45,10 +45,10 @@ function Contact() {
                     </div>
                 </div>
                 <div className='contact-redes color-white pb-6 sm:pb-10 grid grid-cols-[repeat(auto-fit,minmax(140px,auto))] gap-12 pt-12 justify-center'>
-                    <a href="" className='text-black dark:text-white px-4 sm:px-6 py-2 sm:py-3'><Linkedin/>LinkedIn</a>
-                    <a href="" className='text-black dark:text-white px-4 sm:px-6 py-2 sm:py-3'><Github/>Github</a>
-                    <a href="" className='text-black dark:text-white px-4 sm:px-6 py-2 sm:py-3'><MessageCircleMore/>WhatsApp</a>
-                    <a href="" className='text-black dark:text-white px-4 sm:px-6 py-2 sm:py-3'><Youtube/>Tiktok</a>
+                    <a href="https://www.linkedin.com/in/harley-contreras/" target="_blank" rel="noopener noreferrer" className='text-black dark:text-white px-4 sm:px-6 py-2 sm:py-3'><Linkedin/>LinkedIn</a>
+                    <a href="https://github.com/HarleyC0" target="_blank" rel="noopener noreferrer" className='text-black dark:text-white px-4 sm:px-6 py-2 sm:py-3'><Github/>Github</a>
+                    <a href="https://wa.me/573229712878?text=Hola%20CocoDev" target="_blank" rel="noopener noreferrer" className='text-black dark:text-white px-4 sm:px-6 py-2 sm:py-3'><MessageCircleMore/>WhatsApp</a>
+                    <a href="https://www.tiktok.com/@cocodev.h" target="_blank" rel="noopener noreferrer" className='text-black dark:text-white px-4 sm:px-6 py-2 sm:py-3'><Youtube/>Tiktok</a>
                 </div>
             </div>
         </section>
