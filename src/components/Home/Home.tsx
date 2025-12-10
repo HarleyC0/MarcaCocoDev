@@ -1,9 +1,16 @@
-import "./Home.css";
 import LogoPerfil from '@/assets/GhibliPerfil.png';
 import { Button } from "@/components/ui/button";
 import { AtSign, GalleryHorizontalEnd, Github, Globe, Linkedin } from 'lucide-react';
 
 function Home() {
+
+    const textGradientStyle = {
+        background: 'linear-gradient(0deg, #EE6C4D 0%, #ec795c 50%, #eb8e77 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text'
+    };
+
     return(
         <div className="text-start relative">
             <div 
@@ -27,13 +34,13 @@ function Home() {
                         <img src={LogoPerfil} alt="FotoPerfil" className="w-32 color:transparent rounded-full border-orange-500 shadow-lg shadow-orange-500/30" width="128" height="128" decoding="async" data-nimg="1" sizes="(max-width: 768px) 100px,(max-width: 1200px) 120px, 128px"/>
                         <div>
                             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                                Hey, I'm <span className="gradient-text">HarleyCo</span> 
+                                Hey, I'm <span className="gradient-text" style={textGradientStyle}>HarleyCo</span> 
                                 {/*✨*/} <br />
-                                A <span className="gradient-text">Software Developer</span>.
+                                A <span className="gradient-text" style={textGradientStyle}>Software Developer</span>.
                             </h1>
                         </div>
                     </div>
-                    <p className="text-xl max-w-[750px] gradient-text-white">
+                    <p className="text-xl max-w-[750px]">
                         A <strong>fullstack developer</strong> with a <strong>business mindset</strong>.
                         I bring ideas to life with code. Driven by solving real problems and creating products people actually use.
                     </p>
