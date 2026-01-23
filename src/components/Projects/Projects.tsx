@@ -13,23 +13,27 @@ function Projects() {
             <div className="grid items-start gap-x-3 grid-cols-2 pt-10">
                 <div className="grid gap-y-3 grid-cols-1 text-left">
 
-                    
-                    <a href="https://harleyc0.github.io/task-control-app/" target="_blank">
+                    <a href="https://github.com/Crokwar/habit-gamification" target="_blank">
                         <div className="relative rounded-lg overflow-hidden group border-gray-300 dark:border-border border-1">
                             <div className="relative">
-                                <img src={ToDoImg} alt="" fetchPriority="high" sizes="(max-width: 768px) 100vw, 40vw" width="600" height="600" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
+                                <img src={securityImg} alt="" fetchPriority="high" sizes="(max-width: 768px) 100vw, 40vw" width="600" height="600" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                     <div className="p-4">
-                                        <h1 className="text-white text-xl font-bold">ToDo List App</h1>
-                                        <p className="text-white">App de lista de tareas interactiva</p>
+                                        <h1 className="text-white text-xl font-bold">AppWeb Habitos Gamificados</h1>
+                                        <p className="text-white"> EN DESARROLLO - Transforma tu rutina en un juego. <br /> 
+                                        Una plataforma de productividad que utiliza mecánicas de gamificación para convertir metas personales en logros alcanzables</p>
                                         <div className="flex flex-wrap gap-2 mt-2">
-                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">React JS</div>
+                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">Python</div>
+                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">FastAPI</div>
+                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">TypeScript</div>
+                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">React</div>                                        
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </a> 
+
 
 
                 </div>
@@ -56,28 +60,23 @@ function Projects() {
                         </div>
                     </a>
 
-                    <a href="https://github.com/Crokwar/habit-gamification" target="_blank">
+                    <a href="https://harleyc0.github.io/task-control-app/" target="_blank">
                         <div className="relative rounded-lg overflow-hidden group border-gray-300 dark:border-border border-1">
                             <div className="relative">
-                                <img src={securityImg} alt="" fetchPriority="high" sizes="(max-width: 768px) 100vw, 40vw" width="600" height="600" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
+                                <img src={ToDoImg} alt="" fetchPriority="high" sizes="(max-width: 768px) 100vw, 40vw" width="600" height="600" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                     <div className="p-4">
-                                        <h1 className="text-white text-xl font-bold">AppWeb Habitos Gamificados</h1>
-                                        <p className="text-white"> EN DESARROLLO - Transforma tu rutina en un juego. <br /> 
-                                        Una plataforma de productividad que utiliza mecánicas de gamificación para convertir metas personales en logros alcanzables</p>
+                                        <h1 className="text-white text-xl font-bold">ToDo List App</h1>
+                                        <p className="text-white">App de lista de tareas interactiva</p>
                                         <div className="flex flex-wrap gap-2 mt-2">
-                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">Python</div>
-                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">FastAPI</div>
-                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">TypeScript</div>
-                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">React</div>                                        
+                                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">React JS</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-
-
+                    
                 </div>
             </div>
         </section>
