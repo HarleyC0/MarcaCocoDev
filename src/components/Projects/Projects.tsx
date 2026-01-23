@@ -14,7 +14,7 @@ function Projects() {
                 <div className="grid gap-y-3 grid-cols-1 text-left">
 
                     
-                    <a href="https://harleyc0.github.io/React-Project_Task/" target="_blank">
+                    <a href="https://harleyc0.github.io/task-control-app/" target="_blank">
                         <div className="relative rounded-lg overflow-hidden group border-gray-300 dark:border-border border-1">
                             <div className="relative">
                                 <img src={ToDoImg} alt="" fetchPriority="high" sizes="(max-width: 768px) 100vw, 40vw" width="600" height="600" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
