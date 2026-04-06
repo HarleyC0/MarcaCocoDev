@@ -1,7 +1,7 @@
 import ToDoImg from "@/assets/ToDo.png";
 import ContratosMlImg from "@/assets/ContratosML.png";
 import habitImg from "@/assets/HabitDashboard.png";
-import webScraperJobsImg from "@/assets/scrapping.png";
+import webScraperJobsImg from "@/assets/scrappingComplete.png";
 
 
 function Projects() {
